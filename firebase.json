@@ -1,0 +1,32 @@
+{
+  "hosting": [{
+    "target": "diana1",
+    "public": "dist/bifrost-app",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+    {
+      "target": "diana2",
+      "public": "dist/bifrost-app",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }]
+}

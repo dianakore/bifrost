@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "bifrostevent-c3adb"
+  },
+  "targets": {
+    "bifrostevent-c3adb": {
+      "hosting": {
+        "diana1": [
+          "bifrostevent-c3adb"
+        ],
+        "diana2": [
+          "bifrost-event"
+        ]
+      }
+    }
+  }
+}
