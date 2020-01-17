@@ -7,11 +7,11 @@
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
       <a mat-list-item routerLink="/home">Home</a>
-      <a mat-list-item href="#">Galleria</a>
-      <a mat-list-item href="#">Programma</a>
-      <a mat-list-item href="#">Diventa volontario</a>
-      <a mat-list-item href="#">Collegamenti</a>
-      <a mat-list-item href="#">Info</a>
+      <a mat-list-item routerLink="/gallery">Galleria</a>
+      <a mat-list-item routerLink="/programm">Programma</a>
+      <a mat-list-item routerLink="/join">Diventa volontario</a>
+      <a mat-list-item routerLink="/partners">Collegamenti</a>
+      <a mat-list-item routerLink="/info">Info</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -24,7 +24,7 @@
       </button>
     </mat-toolbar>
     <!-- Add Content Here -->
-    <div>contenuto della pagina</div>
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
 

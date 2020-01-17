@@ -11,12 +11,22 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './home/home.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { ProgrammComponent } from './programm/programm.component';
+import { JoinComponent } from './join/join.component';
+import { PartnersComponent } from './partners/partners.component';
+import { InfoComponent } from './info/info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavsidebarComponent,
-    HomeComponent
+    HomeComponent,
+    GalleryComponent,
+    ProgrammComponent,
+    JoinComponent,
+    PartnersComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
