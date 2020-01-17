@@ -1,3 +1,4 @@
+@import 'src/variable';
 .sidenav-container {
   height: 100%;
 }
@@ -8,6 +9,8 @@
 
 .sidenav .mat-toolbar {
   background: inherit;
+  background-color: transparentize($primaryColor, 0.8);
+  color: transparentize($primaryColor, 0.8);
 }
 
 .mat-toolbar.mat-primary {
