@@ -16,6 +16,8 @@ import { ProgrammComponent } from './programm/programm.component';
 import { JoinComponent } from './join/join.component';
 import { PartnersComponent } from './partners/partners.component';
 import { InfoComponent } from './info/info.component';
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { InfoComponent } from './info/info.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
