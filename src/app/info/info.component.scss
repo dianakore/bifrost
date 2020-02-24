@@ -164,15 +164,15 @@ iframe {
 }
 
 .contact100-map {
-  margin-left: 1%;
+/*  margin-left: 1%;
   margin-top: 2%;
   position: absolute;
   z-index: -2;
   width:70%;
-  /*width: calc(100% - 490px);*/
+  !*width: calc(100% - 490px);*!
   height: 90%;
   top: 0;
-  left: 0;
+  left: 0;*/
 }
 
 .wrap-contact100 {
@@ -371,10 +371,27 @@ textarea.input100 {
 @media (max-width: 576px) {
   .wrap-contact100 {
     padding: 82px 15px 33px 15px;
+
+  }
+}
+@media (max-width: 576px) {
+  #google_map > iframe {
+    width: 400px;
+    height: 400px;
   }
 }
 
+@media (max-width: 1200px) {
+  .contact100-map {
+    width: 440px;
+  }
+}
 
+  @media (max-width: 768px) {
+    .contact100-map {
+      width: 100%;
+    }
+  }
 /*------------------------------------------------------------------
 [ Alert validate ]*/
 
@@ -509,9 +526,46 @@ textarea.input100 {
     width: 440px;
   }
 
+  /*
   .contact100-map {
     width: calc(100% - 440px);
+
   }
+  */
+
+
+
+
+
+  /*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+/*  @media (min-width: 1281px) {
+    #google_map > iframe ,#google_map {
+      width: 800px !important;
+    }
+    //CSS
+
+  }*/
+
+  /*
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+  /*
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    #google_map > iframe  {
+      width: 800px !important;
+    }
+    //CSS
+
+  }
+  */
+
+
 
   .contact100-more {
     left: calc((100% - 440px) / 2);
@@ -523,9 +577,11 @@ textarea.input100 {
     width: 100%;
   }
 
+  /*
   .contact100-map {
     display: none;
   }
+  */
 
   .contact100-more {
     position: absolute;

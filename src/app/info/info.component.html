@@ -8,16 +8,16 @@
     <span class="contact100-form-title">
 					Contattaci
     </span>
-
+    <form [formGroup]="infoForm" (ngSubmit)="sendMail()" #form="ngForm">
     <mat-form-field class="wrap-input100 validate-input" >
       <mat-label class="label-input100">Nome</mat-label>
-      <input matInput class="input100" type="text" name="email" placeholder="Nome...">
+      <input matInput formControlName="name" class="input100" type="text" name="name" placeholder="Nome...">
       <span class="focus-input100"></span>
     </mat-form-field>
 
     <mat-form-field class="wrap-input100 validate-input" >
       <mat-label class="label-input100">Email</mat-label>
-      <input matInput class="input100" type="text" name="email" placeholder="e-mail...">
+      <input matInput formControlName="email" class="input100" type="text" name="email" placeholder="e-mail...">
       <span class="focus-input100"></span>
     </mat-form-field>
 
@@ -35,7 +35,7 @@
       <span class="focus-input100"></span>
     </mat-form-field>
     <button mat-raised-button color="primary">Invia</button>
-
+    </form>
 
   </div>
 </div>
