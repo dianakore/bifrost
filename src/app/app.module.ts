@@ -4,7 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavsidebarComponent } from './navsidebar/navsidebar.component';
-import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -16,10 +15,17 @@ import { ProgrammComponent } from './programm/programm.component';
 import { JoinComponent } from './join/join.component';
 import { PartnersComponent } from './partners/partners.component';
 import { InfoComponent } from './info/info.component';
-import {MatFormFieldModule} from "@angular/material/form-field";
+import { MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import {MatVideoModule} from "mat-video";
+import {MatStepperModule} from "@angular/material/stepper";
+import {MatCardModule} from "@angular/material/card";
+import {MatTabsModule} from "@angular/material/tabs";
+import { FlexLayoutModule  } from "@angular/flex-layout";
+
+
 
 @NgModule({
   declarations: [
@@ -36,7 +42,6 @@ import {HttpClientModule} from "@angular/common/http";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    LayoutModule,
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,
@@ -45,9 +50,19 @@ import {HttpClientModule} from "@angular/common/http";
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatVideoModule,
+    MatStepperModule,
+    MatCardModule,
+    MatTabsModule,
+    FlexLayoutModule
   ],
-  providers: [],
+  providers: [
+
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

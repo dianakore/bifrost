@@ -3,8 +3,8 @@
 
 $main-font-color: black;
 
-$my-app-primary: mat-palette($md-naturalgreenpalette);
-$my-app-accent: mat-palette($md-naturalgreenpalette);
+$my-app-primary: mat-palette($md-blue-palette);
+$my-app-accent: mat-palette($md-blue-palette);
 $my-app-warn: mat-palette($mat-red);
 
-$primaryColor: map-get($my-app-primary, 500);
+$primaryColor: map-get($my-app-primary, 900);

@@ -4,7 +4,14 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
+
+
+    <mat-toolbar color="primary">
+      <span>Bifrostfest</span>
+      <!-- This fills the remaining space of the current row -->
+      <span class="example-fill-remaining-space"></span>
+    </mat-toolbar>
+    <!--<mat-toolbar>Menu</mat-toolbar>-->
     <mat-nav-list>
       <a mat-list-item routerLink="/home">Home</a>
       <a mat-list-item routerLink="/gallery">Galleria</a>
