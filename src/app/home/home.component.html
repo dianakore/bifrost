@@ -1,6 +1,37 @@
 <div> <!--<mat-video src="assets/bifrost2020.mp4"></mat-video>-->
-  <mat-video  src="assets/bifrost2020.mp4" title="Bifrost Fest 2020"
-              [autoplay]="true" [muted]="true" [preload]="true" [fullscreen]="true"
-              [download]="false" color="accent" spinner="spin" poster="image.jpg">
+  <mat-video  style="width:100%; !important;" src="assets/bifrost2020.mp4" title="Bifrost Fest 2020"
+              [autoplay]="true" [muted]="true" [loop]="true" [preload]="true" [fullscreen]="true"
+              [download]="false" color="accent" spinner="spin">
   </mat-video>
+
+  <div class="div-only-mobile">
+    <mat-grid-list cols="3" rowHeight="70%" gutterSize="5px">
+      <mat-grid-tile
+        *ngFor="let tile of tiles"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows"
+        [style.background]="tile.color">
+        <a *ngIf="(tile.text=='One' ||tile.text=='Four');else icon;" class="fast">
+          <img [src]=tile.url height="200" alt="prova">
+        </a>
+        <ng-template #icon>
+          <button *ngIf="(tile.text=='Two' ); else notMap;"
+                  (click)=mapsSelector()
+                  type="button"
+                  aria-label="Mappa"
+                  mat-icon-button>
+            <mat-icon aria-label="Apri mappa">place</mat-icon>
+          </button>
+        </ng-template>
+        <ng-template  #notMap>
+          <button routerLink="/programm" type="button"
+                  aria-label="Mappa"
+                  mat-icon-button>
+            <mat-icon aria-label="Apri mappa">insert_invitation</mat-icon>
+          </button>
+        </ng-template>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+
 </div>

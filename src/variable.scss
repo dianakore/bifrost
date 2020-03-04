@@ -8,3 +8,5 @@ $my-app-accent: mat-palette($md-blue-palette);
 $my-app-warn: mat-palette($mat-red);
 
 $primaryColor: map-get($my-app-primary, 900);
+
+$my-app-contrast: map-get($my-app-primary, A400);

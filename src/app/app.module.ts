@@ -24,6 +24,7 @@ import {MatStepperModule} from "@angular/material/stepper";
 import {MatCardModule} from "@angular/material/card";
 import {MatTabsModule} from "@angular/material/tabs";
 import { FlexLayoutModule  } from "@angular/flex-layout";
+import {MatGridListModule} from "@angular/material/grid-list";
 
 
 
@@ -56,7 +57,8 @@ import { FlexLayoutModule  } from "@angular/flex-layout";
     MatStepperModule,
     MatCardModule,
     MatTabsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatGridListModule
   ],
   providers: [
 
