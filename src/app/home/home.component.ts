@@ -15,10 +15,11 @@ export interface Tile {
 
 export class HomeComponent implements OnInit {
   tiles: Tile[] = [
-    {text: 'One', cols: 2, rows: 1, color: 'lightblue',url: "../../assets/rune.jpg"},
+    {text: 'One', cols: 2, rows: 1, color: '#b3911d',url:"\"../../assets/rune.jpg"},
     {text: 'Two', cols: 1, rows: 1, color: '#b3911d'},
     {text: 'Three', cols: 1, rows: 1, color: '#b3911d'},
-    {text: 'Four', cols: 2, rows: 1, color: '#DDBDF1',url: "../../assets/bifrost.JPG"}
+    {text: 'Four', cols: 2, rows: 1, color: '#b3911d',url: "../../assets/bifrost.JPG"}
+
   ];
 
 

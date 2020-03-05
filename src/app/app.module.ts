@@ -25,6 +25,7 @@ import {MatCardModule} from "@angular/material/card";
 import {MatTabsModule} from "@angular/material/tabs";
 import { FlexLayoutModule  } from "@angular/flex-layout";
 import {MatGridListModule} from "@angular/material/grid-list";
+import {AppFooterComponent} from "./app-footer/app-footer.component";
 
 
 
@@ -37,7 +38,8 @@ import {MatGridListModule} from "@angular/material/grid-list";
     ProgrammComponent,
     JoinComponent,
     PartnersComponent,
-    InfoComponent
+    InfoComponent,
+    AppFooterComponent
   ],
   imports: [
     BrowserModule,

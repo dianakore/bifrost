@@ -1,11 +1,13 @@
-<div> <!--<mat-video src="assets/bifrost2020.mp4"></mat-video>-->
-  <mat-video  style="width:100%; !important;" src="assets/bifrost2020.mp4" title="Bifrost Fest 2020"
+<div>
+  <div class="video-container">
+  <mat-video width="100%" height="auto" class="video" src="assets/bifrost2020.mp4" title="Bifrost Fest 2020"
               [autoplay]="true" [muted]="true" [loop]="true" [preload]="true" [fullscreen]="true"
               [download]="false" color="accent" spinner="spin">
   </mat-video>
+  </div>
 
   <div class="div-only-mobile">
-    <mat-grid-list cols="3" rowHeight="70%" gutterSize="5px">
+    <mat-grid-list cols="3" rowHeight="52%" gutterSize="5px">
       <mat-grid-tile
         *ngFor="let tile of tiles"
         [colspan]="tile.cols"
@@ -33,5 +35,6 @@
       </mat-grid-tile>
     </mat-grid-list>
   </div>
-
 </div>
+
+

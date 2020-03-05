@@ -20,6 +20,12 @@ module.exports = function (config) {
       reports: ['html', 'lcovonly', 'text-summary'],
       fixWebpackSourcePaths: true
     },
+
+    module: {
+      rules: [{
+          test: /\.scss$/,
+          loaders: ["style-loader", "css-loader", "sass-loader"]
+        }]},
     reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,

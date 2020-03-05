@@ -13,12 +13,12 @@
     </mat-toolbar>
     <!--<mat-toolbar>Menu</mat-toolbar>-->
     <mat-nav-list>
-      <a mat-list-item routerLink="/home">Home</a>
-      <a mat-list-item routerLink="/gallery">Galleria</a>
-      <a mat-list-item routerLink="/programm">Programma</a>
-      <a mat-list-item routerLink="/join">Diventa volontario</a>
-      <a mat-list-item routerLink="/partners">Collegamenti</a>
-      <a mat-list-item routerLink="/info">Info</a>
+      <a mat-list-item routerLink="/home"  (click)="sidenav.close()">Home</a>
+      <a mat-list-item routerLink="/gallery"  (click)="sidenav.close()">Galleria</a>
+      <a mat-list-item routerLink="/programm"  (click)="sidenav.close()">Programma</a>
+      <a mat-list-item routerLink="/join"  (click)="sidenav.close()">Diventa volontario</a>
+      <a mat-list-item routerLink="/partners"  (click)="sidenav.close()">Collegamenti</a>
+      <a mat-list-item routerLink="/info"  (click)="sidenav.close()">Info</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -32,6 +32,7 @@
     </mat-toolbar>
     <!-- Add Content Here -->
     <router-outlet></router-outlet>
+    <app-footer></app-footer>
   </mat-sidenav-content>
 </mat-sidenav-container>
 
