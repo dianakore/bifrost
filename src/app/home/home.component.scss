@@ -25,12 +25,12 @@
   .div-only-mobile{
     visibility:visible;
     position: absolute;
-    top:50%;
+    top:40%;
   }
   .video-container{
     position:absolute;
     top:0;
-    height:49%;
+    height:40%;
     width:100%;
     overflow: hidden;
   }
@@ -63,7 +63,6 @@ color: $my-app-contrast;
 mat-video{
   width:100% !important;
 }
-
 /*
 .video{
 width: 100%;
@@ -71,4 +70,6 @@ height:100%;
 }
 */
 
-
+img.mat-card-sm-image{
+  width: 110px;
+}

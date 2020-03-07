@@ -7,7 +7,7 @@
   </div>
 
   <div class="div-only-mobile">
-    <mat-grid-list cols="3" rowHeight="52%" gutterSize="5px">
+    <mat-grid-list cols="3" rowHeight="52%" gutterSize="0">
       <mat-grid-tile
         *ngFor="let tile of tiles"
         [colspan]="tile.cols"
@@ -34,7 +34,16 @@
         </ng-template>
       </mat-grid-tile>
     </mat-grid-list>
+    <mat-card class="partners" fxLayout="row" >
+      <mat-card-title-group>
+      <img mat-card-sm-image  >
+      <img mat-card-sm-image src="../../assets/loghi/proloco_2.png"  alt="Proloco Barlassina" fxFlexAlign="center">
+      <img mat-card-sm-image >
+      </mat-card-title-group>
+    </mat-card>
   </div>
+
+
 </div>
 
 

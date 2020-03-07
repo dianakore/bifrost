@@ -1,16 +1,45 @@
 <div class="container-contact100">
-<!--
-  <div class="contact100-map">
-    <iframe class="contact100-map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2789.060674228904!2d9.121251915829754!3d45.64960327910344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786964bce814401%3A0x8adba9b2781364b8!2sParco%20Ex%20Tiro%20A%20Segno!5e0!3m2!1sit!2sit!4v1580286773970!5m2!1sit!2sit"
-            ></iframe>
-  </div>
--->
   <iframe class="contact100-map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2789.060674228904!2d9.121251915829754!3d45.64960327910344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786964bce814401%3A0x8adba9b2781364b8!2sParco%20Ex%20Tiro%20A%20Segno!5e0!3m2!1sit!2sit!4v1580286773970!5m2!1sit!2sit"
   ></iframe>
+  <mat-card class="form-container">
+    <mat-card-title [style.color]="'#C32F22'">
+     <h3> Contattaci </h3></mat-card-title>
+    <form  [formGroup]="infoForm"
+           (ngSubmit)="sendMail()">
+      <p>
+    <mat-form-field appearance="legacy">
+      <mat-label>Nome</mat-label>
+      <input matInput formControlName="name" type="text" name="name" >
+    </mat-form-field>
+      </p>
+      <p>
+      <mat-form-field appearance="legacy">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" type="text" name="email" >
+      </mat-form-field>
+      </p>
+      <p>
+      <mat-form-field appearance="legacy" >
+        <mat-label >Cell</mat-label>
+        <input matInput type="number" name="cell" >
+        <mat-icon matSuffix>phone</mat-icon>
+      </mat-form-field>
+      </p>
+      <p>
+      <mat-form-field appearance="legacy">
+        <mat-label >Messaggio</mat-label>
+        <textarea matInput name="message">
+        </textarea>
+      </mat-form-field>
+      </p>
+      <button mat-fab color="primary">
+        <mat-icon>mail_outline</mat-icon></button>
+    </form>
+  </mat-card>
 
-  <div class="wrap-contact100">
+
+  <!--<div class="wrap-contact100">
     <span class="contact100-form-title">
 					Contattaci
     </span>
@@ -43,5 +72,5 @@
     <button mat-raised-button color="primary">Invia</button>
     </form>
 
-  </div>
+  </div>-->
 </div>

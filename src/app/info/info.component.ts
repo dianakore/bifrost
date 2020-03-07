@@ -8,6 +8,7 @@ import {FormBuilder, Validators} from "@angular/forms";
   templateUrl: './info.component.html',
   styleUrls: ['./info.component.scss']
 })
+
 export class InfoComponent implements OnInit {
   public subscription: Subscription;
   constructor(private sendmailservice: SendMailServiceService,
@@ -25,13 +26,6 @@ export class InfoComponent implements OnInit {
     ]
     ]
   });
-
-
-
-
-
-
-
 
   ngOnInit() {
   }
